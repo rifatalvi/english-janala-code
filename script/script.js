@@ -1,4 +1,8 @@
-// console.log("hi js learners");
+const synonemLetter = (arr)=>{
+   const synonemBoxsLetter = arr.map((letter )=> `<button class="btn bg-[#D7E4EF]">${letter}</button>`);
+   return synonemBoxsLetter.join(" ");
+   
+}
 const lessonsLoder = () => {
     fetch("https://openapi.programming-hero.com/api/levels/all")
     .then((res) => res.json())
@@ -13,8 +17,19 @@ const removeActive =()=>{
 
     })
 }
+const lodeingProgress =(stasus)=>{
+    if(stasus == true){
+        document.getElementById("loding-section").classList.remove("hidden");
+        document.getElementById("word-container").classList.add("hidden");
+    }else{
+        document.getElementById("word-container").classList.remove("hidden");
+        document.getElementById("loding-section").classList.add("hidden");
+    }
+
+}
 
 const wordCount=(id)=>{
+    lodeingProgress(true);
    const url = `https://openapi.programming-hero.com/api/level/${id}`;
    fetch(url)
    .then((res) => res.json())
@@ -47,10 +62,8 @@ const displayWordDitails =(words)=>{
                         </div>
                         <div>
                             <p class="font-bangla mb-3 font-semibold">সমার্থক শব্দ গুলো</p>
-                            <div class="flex gap-5">
-                                <button class="btn bg-[#D7E4EF]">${words.synonyms[0]}</button>
-                                <button class="btn bg-[#D7E4EF]">${words.synonyms[1]}</button>
-                                <button class="btn bg-[#D7E4EF]">${words.synonyms[2]}</button>
+                            <div id="synonemBox" class="flex gap-5">
+                                ${synonemLetter (words.synonyms)}
                             </div>
                         </div>
                     </div>
@@ -72,7 +85,7 @@ const displayWordCard =(words) =>{
             <h2 class="font-bangla font-bold text-5xl">নেক্সট Lesson এ যান</h2>
           </div>
      `;
-
+    lodeingProgress(false);
     return;
   }
   words.forEach((word)=> {
@@ -91,6 +104,7 @@ const displayWordCard =(words) =>{
     `;
     wordContainer.append(card);
   });
+  lodeingProgress(false);
 
 };
 
