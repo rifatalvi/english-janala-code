@@ -12,9 +12,10 @@ English Janala is an interactive web-based language learning tool designed to he
 The "English Janala" (English Window) project acts as a digital companion for language learners. It focuses on accessibility by providing a clean interface where users can interact with words and hear their correct pronunciation, making learning more intuitive and effective.
 
 ## 📸 Project Screenshot
-![English Janala Preview](https://via.placeholder.com/800x400?text=English+Janala+Interface)
----<img width="1353" height="629" alt="Screenshot 2026-04-09 084329" src="https://github.com/user-attachments/assets/ca508689-f5be-4a86-88d0-f2e73aa80e91" />
+![English Janala Preview]
 <img width="1348" height="630" alt="Screenshot 2026-04-09 084310" src="https://github.com/user-attachments/assets/c8cbf2b7-739e-477b-9bb7-b2f2807610df" />
+<img width="1353" height="629" alt="Screenshot 2026-04-09 084329" src="https://github.com/user-attachments/assets/ca508689-f5be-4a86-88d0-f2e73aa80e91" />
+
 
 ---
 
