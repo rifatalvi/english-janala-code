@@ -2,6 +2,11 @@
 
 English Janala is an interactive web-based language learning tool designed to help users improve their English vocabulary and pronunciation. It features built-in voice assistance and a highly responsive user interface.
 
+## 📖 Project Description
+English Janala (English Window), currently live at rifatalvi.github.io/english-janala-code, is an elegant digital companion engineered for language learners. The platform focuses on accessibility and core usability, providing a minimalist interface where users can interact with words and master their pronunciation instantly.
+
+By leveraging the native browser Web Speech API, the application delivers instant text-to-speech synthesis without the overhead of heavy external libraries. This ensures lightning-fast loading speeds, clean resource management, and a smooth, fluid experience across mobile, tablet, and desktop devices—making vocabulary building both intuitive and effective.
+
 ## 🔗 Project Links
 - **Live Demo:** [https://rifatalvi.github.io/english-janala-code/](https://rifatalvi.github.io/english-janala-code/)
 - **Source Code:** [https://github.com/rifatalvi/english-janala-code](https://github.com/rifatalvi/english-janala-code)
